@@ -1,0 +1,21 @@
+{
+  "name": "eden",
+  "version": "1.0.0",
+  "description": "How can you live in the present if you are afraid of the end?",
+  "main": "gulpfile.js",
+  "author": "Seewang",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "gulp-include": "^2.0.3",
+    "gulp-jshint": "^1.11.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.2",
+    "gulp-watch": "^4.3.5",
+    "jshint-stylish": "^2.0.1"
+  }
+}

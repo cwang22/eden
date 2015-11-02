@@ -1,0 +1,212 @@
+/*
+Theme Name: eden
+Theme URI: http://seewang.me
+Author: seewang
+Author URI: http://seewang.me/
+Description: How can you live in the present if you are afraid of the end?
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: eden
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+eden is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+$aqua:  #7FDBFF;
+$blue:  #0074D9;
+$navy:  #001F3F;
+$teal:  #39CCCC;
+$green: #2ECC40;
+$olive: #3D9970;
+$lime:  #01FF70;
+
+// Warm
+
+$yellow:  #FFDC00;
+$orange:  #FF851B;
+$red:     #FF4136;
+$fuchsia: #F012BE;
+$purple:  #B10DC9;
+$maroon:  #85144B;
+
+// Gray Scale
+
+$white:  #fff;
+$silver: #ddd;
+$gray:   #aaa;
+$black:  #111;
+
+$light-gray: #f7f7f7;
+
+@mixin transition {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+
+body {
+  font-family: 'Open Sans';
+  color: $black;
+  background-color: $silver;
+  font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    @include transition;
+}
+
+a:hover, a:focus{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 100;
+}
+
+h1,
+.h1 {
+  font-size: 50px;
+}
+
+h2,
+.h2 {
+  font-size: 40px;
+}
+
+h3,
+.h3 {
+  font-size: 30px;
+}
+
+h4,
+.h4 {
+  font-size: 26px;
+}
+
+h5,
+.h5 {
+  font-size: 20px;
+}
+
+h6,
+.h6 {
+  font-size: 18px;
+}
+
+/* header */
+.site-nav {
+    border: 0;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    @include border-radius(0);
+
+}
+
+.site-branding * {
+    display: inline-block;
+}
+
+.site-title {
+    margin: 0;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.dropdown-menu {
+  padding: 0;
+  > li {
+    > a {
+      line-height: 2;
+      padding: 5px 0 5px 15px;
+    }
+  }
+}
+
+/* content */
+.article {
+
+  background-color: $white;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+
+  margin-bottom: 80px;
+}
+
+.entry-header {
+  height: 60px;
+  line-height: 60px;
+  background-color: $light-gray;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+
+
+  h2 {
+    line-height: 60px;
+    a {
+      color: $black;
+    }
+  }
+
+}
+
+.entry-title{
+  margin: 0 20px;
+}
+
+.entry-meta {
+  margin-bottom: 20px;
+}
+.posted-on {
+  margin-right: 20px;
+}
+
+.entry-content {
+  padding: 0 20px;
+}
+
+.entry-footer {
+  padding: 0 20px 20px 20px;
+
+  .links {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .category-links, .tag-links {
+    margin-right: 10px;
+  }
+
+  .label.label-primary{
+    font-weight: inherit;
+    border: 1px solid #337ab7;
+    @include border-radius(0);
+    margin-right: 5px;
+
+    &:hover {
+      color: #337ab7;
+      border: 1px solid #337ab7;
+      background-color: $light-gray;
+    }
+
+    .glyphicon {
+      margin-right: 5px;
+    }
+  }
+}

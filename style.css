@@ -1,0 +1,140 @@
+/*
+Theme Name: eden
+Theme URI: http://seewang.me
+Author: seewang
+Author URI: http://seewang.me/
+Description: How can you live in the present if you are afraid of the end?
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: eden
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+eden is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+body {
+  font-family: 'Open Sans';
+  color: #111;
+  background-color: #ddd;
+  font-size: 16px; }
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+
+a:hover, a:focus {
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 100; }
+
+h1,
+.h1 {
+  font-size: 50px; }
+
+h2,
+.h2 {
+  font-size: 40px; }
+
+h3,
+.h3 {
+  font-size: 30px; }
+
+h4,
+.h4 {
+  font-size: 26px; }
+
+h5,
+.h5 {
+  font-size: 20px; }
+
+h6,
+.h6 {
+  font-size: 18px; }
+
+/* header */
+.site-nav {
+  border: 0;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0; }
+
+.site-branding * {
+  display: inline-block; }
+
+.site-title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px; }
+
+.dropdown-menu {
+  padding: 0; }
+  .dropdown-menu > li > a {
+    line-height: 2;
+    padding: 5px 0 5px 15px; }
+
+/* content */
+.article {
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 80px; }
+
+.entry-header {
+  height: 60px;
+  line-height: 60px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px; }
+  .entry-header h2 {
+    line-height: 60px; }
+    .entry-header h2 a {
+      color: #111; }
+
+.entry-title {
+  margin: 0 20px; }
+
+.entry-meta {
+  margin-bottom: 20px; }
+
+.posted-on {
+  margin-right: 20px; }
+
+.entry-content {
+  padding: 0 20px; }
+
+.entry-footer {
+  padding: 0 20px 20px 20px; }
+  .entry-footer .links {
+    display: inline-block;
+    margin-bottom: 10px; }
+  .entry-footer .category-links, .entry-footer .tag-links {
+    margin-right: 10px; }
+  .entry-footer .label.label-primary {
+    font-weight: inherit;
+    border: 1px solid #337ab7;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    margin-right: 5px; }
+    .entry-footer .label.label-primary:hover {
+      color: #337ab7;
+      border: 1px solid #337ab7;
+      background-color: #f7f7f7; }
+    .entry-footer .label.label-primary .glyphicon {
+      margin-right: 5px; }
