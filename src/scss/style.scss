@@ -140,7 +140,7 @@ h6,
 }
 
 /* content */
-.article {
+#primary article {
 
   background-color: #f7f7f7;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -212,17 +212,39 @@ h6,
 }
 
 /* widget */
-.search-form input{
-  @include border-radius(0);
+.search-form{
+  input{
+    @include border-radius(0);
+  }
+  .search {
+    width: 188px;
+  }
 }
 
 .widget {
   background-color: #f7f7f7;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
 
   h3 {
-    border-bottom: 1px solid $light-gray;
+    font-size: 1.5em;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e5e5e5;
+    text-indent: 20px;
+  }
+
+  ul {
+    padding: 0 20px;
+    list-style-type: none;
+    li {
+      padding: 10px 0;
+      border-bottom: 1px dashed #e5e5e5;
+
+      &:last-child {
+        border: 0;
+      }
+    }
   }
 }
 
