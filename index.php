@@ -54,7 +54,10 @@ get_header(); ?>
 				</main><!-- #main -->
 			</div><!-- #primary -->
 		</div>
+		<div class="col-lg-3 col-md-3 col-lg-3 col-sm-12">
+			<?php get_sidebar(); ?>
+		</div>
 	</div>
 </div>
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
