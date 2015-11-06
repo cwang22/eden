@@ -16,9 +16,14 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
+	<div class="entry-meta">
+		<?php eden_posted_on(); ?>
+	</div><!-- .entry-meta -->
+
 	<div class="entry-content">
-	<?php eden_posted_on(); ?>
+
 		<?php the_content(); ?>
+		
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'eden' ),
@@ -31,4 +36,3 @@
 		<?php eden_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
-
