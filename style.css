@@ -22,7 +22,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 body {
   font-family: 'Open Sans';
   color: #111;
-  background-color: #ddd;
+  background-color: #e8e8e8;
   font-size: 16px; }
 
 a {
@@ -62,6 +62,19 @@ h6,
 .h6 {
   font-size: 18px; }
 
+.page-header {
+  border-bottom: none; }
+
+blockquote {
+  border-left: 5px solid #337ab7; }
+
+.btn.btn-primary {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0; }
+
 /* header */
 .site-nav {
   border: 0;
@@ -81,24 +94,32 @@ h6,
   font-size: 24px; }
 
 .dropdown-menu {
-  padding: 0; }
+  padding: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0; }
   .dropdown-menu > li > a {
     line-height: 2;
-    padding: 5px 0 5px 15px; }
+    padding: 5px 15px; }
+
+/* footer */
+.site-footer {
+  margin-top: 60px; }
 
 /* content */
-.article {
-  background-color: #fff;
+#primary article.post, #primary article.page {
+  background-color: #f7f7f7;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  margin-bottom: 80px; }
+  margin-bottom: 30px; }
 
 .entry-header {
-  height: 60px;
-  line-height: 60px;
   background-color: #f7f7f7;
-  border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 20px; }
+  .entry-header h1 {
+    line-height: 75px; }
   .entry-header h2 {
     line-height: 60px; }
     .entry-header h2 a {
@@ -108,16 +129,20 @@ h6,
   margin: 0 20px; }
 
 .entry-meta {
-  margin-bottom: 20px; }
+  padding: 0 20px 20px; }
 
 .posted-on {
   margin-right: 20px; }
 
-.entry-content {
+.entry-content, .entry-summary {
   padding: 0 20px; }
+  .entry-content .more, .entry-summary .more {
+    text-align: right;
+    margin-right: -20px; }
 
 .entry-footer {
-  padding: 0 20px 20px 20px; }
+  padding: 0 20px 20px 20px;
+  margin-top: 20px; }
   .entry-footer .links {
     display: inline-block;
     margin-bottom: 10px; }
@@ -138,3 +163,111 @@ h6,
       background-color: #f7f7f7; }
     .entry-footer .label.label-primary .glyphicon {
       margin-right: 5px; }
+
+/* widget */
+.search-form input {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0; }
+
+.search-form .input-search {
+  width: 70%;
+  display: inline-block; }
+
+.search-form .btn-search {
+  width: 28%;
+  float: right;
+  display: inline-block; }
+
+.widget {
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; }
+  .widget h3 {
+    font-size: 1.5em;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e5e5e5;
+    text-indent: 20px;
+    margin-top: 0; }
+  .widget ul {
+    padding: 0 20px;
+    list-style-type: none; }
+    .widget ul li {
+      padding: 10px 0; }
+      .widget ul li:not(:last-child) {
+        border-bottom: 1px dashed #aaa; }
+
+.widget_search {
+  background-color: inherit;
+  box-shadow: none; }
+
+.tagcloud {
+  padding: 0 20px 20px 20px; }
+
+/* single page */
+.single #primary article {
+  margin-bottom: 40px; }
+
+.nav-links {
+  font-size: 18px;
+  line-height: 48px;
+  height: 48px; }
+  .nav-links div {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    overflow: hidden; }
+    .nav-links div a {
+      display: block;
+      text-align: center; }
+      .nav-links div a:hover {
+        color: #286090; }
+  .nav-links .nav-previous {
+    padding-left: 5px; }
+  .nav-links .nav-next {
+    padding-right: 5px; }
+
+/* comments */
+.single #primary .comments-area article {
+  margin-bottom: 20px; }
+
+.comments-area {
+  margin-top: 40px; }
+
+.comment-list {
+  list-style: none;
+  padding-left: 0; }
+  .comment-list li {
+    margin-bottom: 20px; }
+    .comment-list li:not(:last-child) {
+      border-bottom: 1px dashed #aaa; }
+    .comment-list li:focus {
+      outline: none; }
+    .comment-list li .children {
+      list-style: none;
+      padding-left: 20px;
+      border-left: 4px solid #aaa; }
+
+.comment-author .fn {
+  font-style: inherit;
+  vertical-align: middle;
+  margin-left: 10px; }
+
+.comment-metadata {
+  font-size: 0.8em;
+  margin: 5px 0 15px; }
+  .comment-metadata a {
+    color: #777777; }
+
+#commentform {
+  margin-bottom: 80px; }
+  #commentform input {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0; }
