@@ -15,9 +15,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 eden is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
 $aqua:  #7FDBFF;
@@ -68,6 +65,7 @@ body {
   color: $black;
   background-color: $bg;
   font-size: 16px;
+  word-wrap: break-word;
 }
 
 a {
@@ -113,19 +111,60 @@ h6,
   font-size: 18px;
 }
 
-.page-header {
-  border-bottom: none;
-}
 
 blockquote {
   border-left: 5px solid #337ab7;
 }
 
+img, figure {
+  height: auto;
+  max-width: 100%;
+}
+
+.page-header {
+  border-bottom: none;
+}
+
 .btn.btn-primary {
   @include border-radius(0);
 }
+/* WordPress css class */
+.alignright {
+  float: right;
+}
 
+.alignleft {
+  float: left;
+}
 
+.aligncenter {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.gallery-columns-3 {
+
+  .gallery-item{
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+    width: 33%;
+
+  }
+  &:after{
+    content: ""; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden; 
+  }
+}
+
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
 
 /* header */
 .site-nav {
@@ -163,7 +202,7 @@ blockquote {
 
 /* content */
 #primary  {
-  article.post, article.page{
+  article.post, article.page, article.attachment{
     background-color: #f7f7f7;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     margin-bottom: 30px;
@@ -200,7 +239,7 @@ blockquote {
 }
 
 .entry-content, .entry-summary{
-  padding: 0 20px;
+  padding: 0 20px 20px;
   
   .more {
     text-align: right;
@@ -210,7 +249,7 @@ blockquote {
 
 .entry-footer {
   padding: 0 20px 20px 20px;
-  margin-top: 20px;
+
   .links {
     display: inline-block;
     margin-bottom: 10px;
@@ -221,6 +260,7 @@ blockquote {
   }
 
   .label.label-primary{
+    display: inline-block;
     font-weight: inherit;
     border: 1px solid #337ab7;
     @include border-radius(0);
@@ -339,7 +379,7 @@ blockquote {
   list-style: none;
   padding-left: 0;
 
-  li {
+  .comment {
     margin-bottom: 20px;
 
     &:not(:last-child) {

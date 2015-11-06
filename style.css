@@ -15,15 +15,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 eden is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 body {
   font-family: 'Open Sans';
   color: #111;
   background-color: #e8e8e8;
-  font-size: 16px; }
+  font-size: 16px;
+  word-wrap: break-word; }
 
 a {
   text-decoration: none;
@@ -62,11 +60,15 @@ h6,
 .h6 {
   font-size: 18px; }
 
-.page-header {
-  border-bottom: none; }
-
 blockquote {
   border-left: 5px solid #337ab7; }
+
+img, figure {
+  height: auto;
+  max-width: 100%; }
+
+.page-header {
+  border-bottom: none; }
 
 .btn.btn-primary {
   border-radius: 0;
@@ -74,6 +76,35 @@ blockquote {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0; }
+
+/* WordPress css class */
+.alignright {
+  float: right; }
+
+.alignleft {
+  float: left; }
+
+.aligncenter {
+  text-align: center;
+  margin: 0 auto; }
+
+.gallery-columns-3 .gallery-item {
+  float: left;
+  margin-top: 10px;
+  text-align: center;
+  width: 33%; }
+
+.gallery-columns-3:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+embed,
+iframe,
+object {
+  max-width: 100%; }
 
 /* header */
 .site-nav {
@@ -109,7 +140,7 @@ blockquote {
   margin-top: 60px; }
 
 /* content */
-#primary article.post, #primary article.page {
+#primary article.post, #primary article.page, #primary article.attachment {
   background-color: #f7f7f7;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px; }
@@ -135,20 +166,20 @@ blockquote {
   margin-right: 20px; }
 
 .entry-content, .entry-summary {
-  padding: 0 20px; }
+  padding: 0 20px 20px; }
   .entry-content .more, .entry-summary .more {
     text-align: right;
     margin-right: -20px; }
 
 .entry-footer {
-  padding: 0 20px 20px 20px;
-  margin-top: 20px; }
+  padding: 0 20px 20px 20px; }
   .entry-footer .links {
     display: inline-block;
     margin-bottom: 10px; }
   .entry-footer .category-links, .entry-footer .tag-links {
     margin-right: 10px; }
   .entry-footer .label.label-primary {
+    display: inline-block;
     font-weight: inherit;
     border: 1px solid #337ab7;
     border-radius: 0;
@@ -241,13 +272,13 @@ blockquote {
 .comment-list {
   list-style: none;
   padding-left: 0; }
-  .comment-list li {
+  .comment-list .comment {
     margin-bottom: 20px; }
-    .comment-list li:not(:last-child) {
+    .comment-list .comment:not(:last-child) {
       border-bottom: 1px dashed #aaa; }
-    .comment-list li:focus {
+    .comment-list .comment:focus {
       outline: none; }
-    .comment-list li .children {
+    .comment-list .comment .children {
       list-style: none;
       padding-left: 20px;
       border-left: 4px solid #aaa; }
