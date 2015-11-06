@@ -14,6 +14,7 @@ A simple Bootstrap WordPress theme.
 == Changelog ==
 
 = 1.0 - 06 Nov 2015 =
+
 * Initial release
 
 == Credits ==
