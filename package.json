@@ -1,7 +1,7 @@
 {
-  "name": "eden",
+  "name": "Eden",
   "version": "1.0.0",
-  "description": "How can you live in the present if you are afraid of the end?",
+  "description": "A simple Bootstrap WordPress theme.",
   "main": "gulpfile.js",
   "author": "Seewang",
   "license": "GPL-3.0",
