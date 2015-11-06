@@ -10,7 +10,7 @@
 get_header(); ?>
 <div class="container">
 	<div class="row">
-		<div class="col-lg-9 col-md-9 col-sm-12">
+		<div class="col-md-9 col-sm-12">
 			<div id="primary" class="content-area">
 				<main id="main" class="site-main" role="main">
 
@@ -18,7 +18,7 @@ get_header(); ?>
 
 					<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-					<?php the_post_navigation(); ?>
+					<?php eden_post_nav(); ?>
 
 					<?php
 						// If comments are open or we have at least one comment, load up the comment template.
