@@ -36,3 +36,9 @@ function eden_excerpt_more($more) {
     return '...<div class="more"><a class="more-link btn btn-primary" href="'. get_permalink($post->ID) . '">Continue reading <i class="fa fa-chevron-right"></i></a></div>';
 }
 add_filter('excerpt_more', 'eden_excerpt_more');
+
+
+function eden_add_custom_table_class( $content ) {
+    return str_replace( '<table>', '<table class="table table-hover">', $content );
+}
+add_filter( 'the_content', 'eden_add_custom_table_class' );
