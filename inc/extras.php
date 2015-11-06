@@ -22,3 +22,17 @@ function eden_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'eden_body_classes' );
+
+/**
+ *
+ */
+function eden_content_more_link( $more ) {
+    return '<div class="more"><a class="more-link btn btn-primary" href="'. get_permalink( get_the_ID() ) . '">Continue reading <i class="fa fa-chevron-right"></i></a></div>';
+}
+add_filter( 'the_content_more_link', 'eden_content_more_link' );
+
+function eden_excerpt_more($more) {
+    global $post;
+    return '...<div class="more"><a class="more-link btn btn-primary" href="'. get_permalink($post->ID) . '">Continue reading <i class="fa fa-chevron-right"></i></a></div>';
+}
+add_filter('excerpt_more', 'eden_excerpt_more');
