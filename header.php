@@ -53,7 +53,7 @@
 		            wp_nav_menu( array(
 		                'theme_location'    => 'primary',
 		                'depth'             => 2,
-		                'container_class'	=> 'collapse navbar-collapse navbar-ex1-collapse pull-right',
+		                'container_class'	=> 'collapse navbar-collapse navbar-ex1-collapse navbar-right',
 		                'menu_class'		=> 'nav navbar-nav',
 		                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
 		                'walker'            => new wp_bootstrap_navwalker()
