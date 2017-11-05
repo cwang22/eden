@@ -15,6 +15,11 @@ A simple Bootstrap WordPress theme.
 
 - 1.0 - 06 Nov 2015: initial release
 
+
+### Screenshot
+
+![Screenshot](https://github.com/cwang22/eden/blob/master/screenshot.png)
+
 ### Credits
 
 * Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
